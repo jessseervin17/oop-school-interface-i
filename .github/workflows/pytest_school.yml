@@ -1,0 +1,23 @@
+name: School Registry Tests
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+  pull_request:
+    branches:
+      - master
+      - dev
+  workflow_dispatch:
+
+jobs:
+  unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code in
+        uses: actions/checkout@v7
+      - name: Build Image
+        run: docker build -t pytest_school .
+      - name: Run Container In Image
+        run: docker run pytest_school
