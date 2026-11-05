@@ -1,4 +1,4 @@
-from person import Person
+from classes.person import Person
 
 class Student(Person):
     def __init__(self, name, age, role, student_id, password):

@@ -1,4 +1,4 @@
-from person import Person
+from classes.person import Person
 
 class Staff(Person):
     def __init__(self, name, age, role, employee_id, password):
