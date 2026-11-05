@@ -1,4 +1,4 @@
-from school import School 
+from school import School, Person, Student, Staff 
 
 school = School('Ridgemont High') 
 
