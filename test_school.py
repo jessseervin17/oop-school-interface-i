@@ -1,4 +1,7 @@
-from school import School, Person, Student, Staff
+from classes.school import School
+from classes.person import Person
+from classes.staff import Staff
+from classes.student import Student
 
 def test_school_class():
     ridgemont_high = School("Ridgemont")
