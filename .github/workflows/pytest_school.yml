@@ -18,6 +18,6 @@ jobs:
       - name: Get code in
         uses: actions/checkout@v7
       - name: Build Image
-        run: docker build -t pytest_school -f Dockerfile.test
+        run: docker build -t pytest_school -f Dockerfile.test .
       - name: Run Container In Image
         run: docker run pytest_school
